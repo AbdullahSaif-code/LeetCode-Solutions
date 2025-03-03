@@ -4,9 +4,9 @@ class Solution:
         while i < len(nums)-1:
             if nums[i] == nums[i+1]:
                 del nums[i]
-            else:
-                i += 1
+                continue
+            i += 1
         return len(nums)
 List = [1,1,2]
 slo = Solution()
-print(slo.removeDuplicates(List))
+print(slo.removeDuplicates(List))  
